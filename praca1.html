@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice_1</title>
+    <style>
+        .block {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            width:900px; 
+        }
+
+        .count {
+            display: grid;
+            padding: 15px; 
+            align-items: start;
+            justify-items: center;
+        }
+
+        .count:nth-child(1) {
+            grid-column: span 3;
+            grid-row: span 3;
+            background-color: red;
+        }
+
+        .count:nth-child(2) {
+            grid-column: span 1;
+            grid-row: span 3;
+            background-color: yellow;
+        }
+
+        .count:nth-child(3) {
+            grid-row: span 2;
+            grid-column: span 2;
+            background-color: red;
+        }
+
+        .count:nth-child(4) {
+            grid-column: span 2;
+            background-color: blue;
+        }
+        .count:nth-child(5) {
+            grid-column: span 2;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="count"></div>
+        <div class="count"></div>
+        <div class="count"></div>
+        <div class="count"></div>
+        <div class="count"></div>
+    </div>
+</body>
+</html>

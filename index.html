@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .number {
+            width: 25px;
+            height: 25px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border: 2px solid black; 
+        }
+
+        .number:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            order: -1;
+        }
+
+        .number:first-child {
+            align-self: start;
+            width: 100px;
+        }
+
+        .number:last-child {
+            width: 100px;
+            align-self: end;
+        }
+    </style>
+    <style>
+        .block {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 0;
+            column-gap: 5px;
+            width:900px; 
+        }
+
+        .count {
+            border: 2px solid black; 
+            display: grid;
+            padding: 15px; 
+            align-items: start;
+            justify-items: center;
+        }
+
+        .count:nth-child(1) {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        .count:nth-child(2) {
+            grid-column: span 1;
+            grid-row: span 3;
+        }
+
+        .count:nth-child(3) {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+
+        .count:nth-child(4) {
+            grid-column: span 2;
+        }
+        .count:nth-child(5) {
+            grid-column: span 2;
+        }
+    </style>
+</style>
+<body>
+    <div class="container">
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+    </div>
+</body>
+</html>
